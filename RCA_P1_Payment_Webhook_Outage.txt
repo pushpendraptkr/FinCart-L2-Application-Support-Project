@@ -1,0 +1,53 @@
+---
+
+### File 2: `RCA_P1_Payment_Webhook_Outage.md`
+
+Copy everything inside the box below and save it as **`RCA_P1_Payment_Webhook_Outage.md`**:
+
+```markdown
+# Root Cause Analysis (RCA) — P1 Incident Report
+
+| Field | Details |
+| :--- | :--- |
+| **Incident ID** | INC-2026048 (Master P1 Ticket) |
+| **Date of Incident** | October 3, 2026 |
+| **Duration** | 12:30 PM – 02:36 PM IST (2 Hours 06 Minutes) |
+| **Severity** | P1 - Critical (Customer Checkout & Order Confirmation Impacted) |
+| **Impacted Systems** | FinCart Checkout API, Webhook Listener & `fincart_support` MySQL DB |
+| **Prepared By** | Pushpendra Patkar (Application Support Engineer) |
+
+---
+
+## 1. Executive Summary
+On October 3, 2026, customer orders experienced status synchronization failures and payment discrepancies during peak checkout hours. L2 Application Support triaged the outage across Ubuntu Linux logs (`server.log`), Windows database services (`MySQL80`), and the `fincart_support` MySQL database (100 records across `customer_orders` and `customer_payments`), resolving four categories of production defects:
+1. **6 Stuck Orders (`1002, 1008, 1014, 1022, 1029, 1037`):** Payment succeeded (`SUCCESS`) at the payment gateway, but `order_status` remained stuck in `PENDING`.
+2. **3 Duplicate Payment Deductions (`1005, 1015, 1025`):** Customers were charged twice for a single order due to rapid retry clicks during gateway latency.
+3. **5 Orphan Orders (`1046, 1047, 1048, 1049, 1050`):** Orders created in `PENDING` state with `NULL` payment records due to dropped API connections.
+4. **2 Billing Amount Mismatches (`1018, 1033`):** Discrepancy between billed `order_amount` and gateway `amount_paid`.
+
+---
+
+## 2. Detection & Triage Timeline
+* **12:30 PM:** Multiple L1 tickets escalated to L2 Support reporting *"Payment deducted from bank/UPI, but order still shows Pending."*
+* **12:45 PM:** L2 inspected Ubuntu server logs (`~/ase-practice/logs/server.log`) using `grep -E "WARNING|ERROR" server.log`, identifying `WARNING High memory usage detected` followed by `ERROR Database connection failed`.
+* **01:05 PM:** L2 verified the database host on Windows using `netstat -ano | findstr :3306` and `tasklist | findstr /i "mysql"`, confirming `MySQL80` service (`PID 5168`) and worker process (`PID 5676`) were online and listening on port `3306`.
+* **01:25 PM:** L2 executed diagnostic `INNER JOIN`, `LEFT JOIN`, and `GROUP BY ... HAVING` SQL scripts on `fincart_support` to isolate all affected orders and customer accounts.
+* **02:00 PM:** Executed safe SQL `UPDATE` workaround (`UPDATE customer_orders INNER JOIN customer_payments SET order_status = 'CONFIRMED'`) to immediately unblock the 6 paid orders.
+* **02:36 PM:** Exported duplicate payment and amount mismatch reports for L2 Billing refund processing and L3 Dev fix. Service restored to normal operation.
+
+---
+
+## 3. Root Cause Analysis
+1. **Primary Technical Cause:** High memory utilization spike on the application server caused brief database connection drops (`ERROR Database connection failed` at `10:15:20`), preventing payment gateway webhook callbacks from updating `customer_orders.order_status` from `PENDING` to `CONFIRMED`.
+2. **Secondary Cause:** Lack of frontend button disablement / idempotency token allowed users to double-submit payments during HTTP 504 gateway timeouts, resulting in duplicate charges.
+
+---
+
+## 4. Corrective & Preventive Actions (CAPA)
+| Action Item | Owner | Status |
+| :--- | :--- | :--- |
+| Run SQL `INNER JOIN` `UPDATE` script to move 6 paid stuck orders to `CONFIRMED` | L2 App Support | Completed |
+| Generate refund reconciliation report for 3 duplicate-charged orders (`1005, 1015, 1025`) | L2 Billing Support | Completed |
+| Build Power BI SLA & Incident Tracker Dashboard (`MTTR: 3.96 hrs`, `SLA Compliance: 76%`) | L2 App Support | Completed |
+| Schedule automated SQL reconciliation job every 15 minutes to auto-fix stuck webhook orders | L2 / Database Ops | In Progress |
+| Implement idempotency key on Checkout API to block duplicate payment submissions | L3 Core App Dev | Open |

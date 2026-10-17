@@ -1,0 +1,101 @@
+Ticket_ID,Created_Timestamp,Priority,Issue_Category,Assigned_Support_Tier,SLA_Target_Hours,Resolution_Hours,SLA_Status
+INC-2026001,10/1/2026 8:00,P1 - Critical,Duplicate Payment Deducted,L2 - Billing & Reconciliation,2,0.76,Met
+INC-2026002,10/1/2026 11:30,P4 - Low,User Auth / Token Expired,L1 - Service Desk,24,15.27,Met
+INC-2026003,10/1/2026 15:01,P2 - High,Billing Amount Mismatch,L3 - Core App Dev,4,2.33,Met
+INC-2026004,10/1/2026 18:32,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,3.03,Met
+INC-2026005,10/1/2026 22:03,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,4.47,Breached
+INC-2026006,10/2/2026 1:34,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,3.79,Met
+INC-2026007,10/2/2026 5:05,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,2.68,Met
+INC-2026008,10/2/2026 8:36,P2 - High,DB Connection Pool Exhausted,L2 - DB & App Support,4,3.92,Met
+INC-2026009,10/2/2026 12:07,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,2.02,Met
+INC-2026010,10/2/2026 15:38,P3 - Medium,Billing Amount Mismatch,L3 - Core App Dev,8,2.55,Met
+INC-2026011,10/2/2026 19:09,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,2.24,Met
+INC-2026012,10/2/2026 22:40,P4 - Low,User Auth / Token Expired,L1 - Service Desk,24,6.48,Met
+INC-2026013,10/3/2026 2:10,P1 - Critical,Server High CPU / Memory,L2 - Windows/Linux Ops,2,2.47,Breached
+INC-2026014,10/3/2026 5:41,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,7.82,Met
+INC-2026015,10/3/2026 9:12,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,3.48,Met
+INC-2026016,10/3/2026 12:43,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,8.27,Breached
+INC-2026017,10/3/2026 16:14,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,4.09,Breached
+INC-2026018,10/3/2026 19:45,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,1.87,Met
+INC-2026019,10/3/2026 23:16,P2 - High,Orphan Order / API Drop,L2 - DB & App Support,4,4.41,Breached
+INC-2026020,10/4/2026 2:47,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,3.14,Met
+INC-2026021,10/4/2026 6:18,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,4.11,Breached
+INC-2026022,10/4/2026 9:49,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,8.45,Breached
+INC-2026023,10/4/2026 13:20,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,2.34,Met
+INC-2026024,10/4/2026 16:50,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,1.6,Met
+INC-2026025,10/4/2026 20:21,P2 - High,Orphan Order / API Drop,L2 - DB & App Support,4,2.02,Met
+INC-2026026,10/4/2026 23:52,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,2.74,Met
+INC-2026027,10/5/2026 3:23,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,4.14,Breached
+INC-2026028,10/5/2026 6:54,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,4.3,Breached
+INC-2026029,10/5/2026 10:25,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,1.23,Met
+INC-2026030,10/5/2026 13:56,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,5.68,Met
+INC-2026031,10/5/2026 17:27,P1 - Critical,Gateway Timeout (HTTP 504),L2 - API & Infra Support,2,1.49,Met
+INC-2026032,10/5/2026 20:58,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,3.6,Met
+INC-2026033,10/6/2026 0:29,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,1.63,Met
+INC-2026034,10/6/2026 4:00,P4 - Low,User Auth / Token Expired,L1 - Service Desk,24,9.75,Met
+INC-2026035,10/6/2026 7:30,P3 - Medium,User Auth / Token Expired,L1 - Service Desk,8,8.79,Breached
+INC-2026036,10/6/2026 11:01,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,2.36,Met
+INC-2026037,10/6/2026 14:32,P1 - Critical,Duplicate Payment Deducted,L2 - Billing & Reconciliation,2,1.69,Met
+INC-2026038,10/6/2026 18:03,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,7.06,Met
+INC-2026039,10/6/2026 21:34,P2 - High,Billing Amount Mismatch,L3 - Core App Dev,4,2.51,Met
+INC-2026040,10/7/2026 1:05,P3 - Medium,Orphan Order / API Drop,L2 - DB & App Support,8,9,Breached
+INC-2026041,10/7/2026 4:36,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,4.66,Breached
+INC-2026042,10/7/2026 8:07,P3 - Medium,Orphan Order / API Drop,L2 - DB & App Support,8,3.81,Met
+INC-2026043,10/7/2026 11:38,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,2.99,Met
+INC-2026044,10/7/2026 15:09,P2 - High,DB Connection Pool Exhausted,L2 - DB & App Support,4,2.28,Met
+INC-2026045,10/7/2026 18:40,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,2.23,Met
+INC-2026046,10/7/2026 22:10,P3 - Medium,Billing Amount Mismatch,L3 - Core App Dev,8,2.27,Met
+INC-2026047,10/8/2026 1:41,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,3.39,Met
+INC-2026048,10/8/2026 5:12,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,3.01,Met
+INC-2026049,10/8/2026 8:43,P1 - Critical,Gateway Timeout (HTTP 504),L2 - API & Infra Support,2,0.8,Met
+INC-2026050,10/8/2026 12:14,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,4.01,Met
+INC-2026051,10/8/2026 15:45,P3 - Medium,User Auth / Token Expired,L1 - Service Desk,8,8.54,Breached
+INC-2026052,10/8/2026 19:16,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,2.06,Met
+INC-2026053,10/8/2026 22:47,P3 - Medium,User Auth / Token Expired,L1 - Service Desk,8,3.04,Met
+INC-2026054,10/9/2026 2:18,P2 - High,DB Connection Pool Exhausted,L2 - DB & App Support,4,2.96,Met
+INC-2026055,10/9/2026 5:49,P1 - Critical,Gateway Timeout (HTTP 504),L2 - API & Infra Support,2,2.57,Breached
+INC-2026056,10/9/2026 9:20,P4 - Low,User Auth / Token Expired,L1 - Service Desk,24,7.98,Met
+INC-2026057,10/9/2026 12:50,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,3.62,Met
+INC-2026058,10/9/2026 16:21,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,7.48,Met
+INC-2026059,10/9/2026 19:52,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,2.06,Met
+INC-2026060,10/9/2026 23:23,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,3.82,Met
+INC-2026061,10/10/2026 2:54,P2 - High,Orphan Order / API Drop,L2 - DB & App Support,4,2.52,Met
+INC-2026062,10/10/2026 6:25,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,3.48,Met
+INC-2026063,10/10/2026 9:56,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,3.48,Met
+INC-2026064,10/10/2026 13:27,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,3.13,Met
+INC-2026065,10/10/2026 16:58,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,1.53,Met
+INC-2026066,10/10/2026 20:29,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,4.21,Breached
+INC-2026067,10/11/2026 0:00,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,2.35,Met
+INC-2026068,10/11/2026 3:30,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,1.87,Met
+INC-2026069,10/11/2026 7:01,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,1.35,Met
+INC-2026070,10/11/2026 10:32,P4 - Low,User Auth / Token Expired,L1 - Service Desk,24,14.43,Met
+INC-2026071,10/11/2026 14:03,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,3.64,Met
+INC-2026072,10/11/2026 17:34,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,2.12,Met
+INC-2026073,10/11/2026 21:05,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,3.04,Met
+INC-2026074,10/12/2026 0:36,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,2.02,Met
+INC-2026075,10/12/2026 4:07,P2 - High,Billing Amount Mismatch,L3 - Core App Dev,4,3.52,Met
+INC-2026076,10/12/2026 7:38,P3 - Medium,Billing Amount Mismatch,L3 - Core App Dev,8,3.26,Met
+INC-2026077,10/12/2026 11:09,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,3.69,Met
+INC-2026078,10/12/2026 14:40,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,4.78,Met
+INC-2026079,10/12/2026 18:10,P1 - Critical,Duplicate Payment Deducted,L2 - Billing & Reconciliation,2,2.48,Breached
+INC-2026080,10/12/2026 21:41,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,2.99,Met
+INC-2026081,10/13/2026 1:12,P2 - High,DB Connection Pool Exhausted,L2 - DB & App Support,4,2.43,Met
+INC-2026082,10/13/2026 4:43,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,1.61,Met
+INC-2026083,10/13/2026 8:14,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,4.53,Breached
+INC-2026084,10/13/2026 11:45,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,8.32,Breached
+INC-2026085,10/13/2026 15:16,P1 - Critical,Duplicate Payment Deducted,L2 - Billing & Reconciliation,2,1.19,Met
+INC-2026086,10/13/2026 18:47,P2 - High,Duplicate Payment Deducted,L2 - Billing & Reconciliation,4,3.58,Met
+INC-2026087,10/13/2026 22:18,P2 - High,Billing Amount Mismatch,L3 - Core App Dev,4,4.14,Breached
+INC-2026088,10/14/2026 1:49,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,3.2,Met
+INC-2026089,10/14/2026 5:20,P2 - High,DB Connection Pool Exhausted,L2 - DB & App Support,4,3.11,Met
+INC-2026090,10/14/2026 8:50,P3 - Medium,Orphan Order / API Drop,L2 - DB & App Support,8,3.74,Met
+INC-2026091,10/14/2026 12:21,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,1.54,Met
+INC-2026092,10/14/2026 15:52,P3 - Medium,Billing Amount Mismatch,L3 - Core App Dev,8,8.46,Breached
+INC-2026093,10/14/2026 19:23,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,4.44,Breached
+INC-2026094,10/14/2026 22:54,P2 - High,Gateway Timeout (HTTP 504),L2 - API & Infra Support,4,3.48,Met
+INC-2026095,10/15/2026 2:25,P2 - High,Server High CPU / Memory,L2 - Windows/Linux Ops,4,2.42,Met
+INC-2026096,10/15/2026 5:56,P3 - Medium,Orphan Order / API Drop,L2 - DB & App Support,8,4.51,Met
+INC-2026097,10/15/2026 9:27,P1 - Critical,Gateway Timeout (HTTP 504),L2 - API & Infra Support,2,2.08,Breached
+INC-2026098,10/15/2026 12:58,P3 - Medium,Orphan Order / API Drop,L2 - DB & App Support,8,8.46,Breached
+INC-2026099,10/15/2026 16:29,P2 - High,Payment Stuck in Pending,L2 - DB & App Support,4,4.39,Breached
+INC-2026100,10/15/2026 20:00,P3 - Medium,Payment Stuck in Pending,L2 - DB & App Support,8,7.62,Met

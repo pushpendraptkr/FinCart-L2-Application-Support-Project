@@ -1,0 +1,14 @@
+# Standard Operating Procedure (SOP): L2 Server & Log Troubleshooting
+**Application:** FinCart E-Commerce Order & Billing System  
+**Target Audience:** L1 / L2 Application Support Engineers  
+
+---
+
+## Part 1: Basic Linux Log & Server Diagnostics
+When an alert triggers for failed orders or slow application response on the Linux production server, run the following 6 basic commands:
+
+### 1. Check Live Logs as Errors Happen
+```bash
+tail -n 20 application_error.log
+# To watch the log file update in real time:
+tail -f application_error.log
